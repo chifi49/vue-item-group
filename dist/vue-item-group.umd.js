@@ -340,8 +340,10 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: /Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"941e22d0-vue-loader-template"}!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib??vue-loader-options!./vue-item-group.vue?vue&type=template&id=d09984b2&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.tag,{tag:"component",style:({'display':_vm.direction=='horizontal'?'flex':'auto','list-style':'none','margin':0,padding:0})},_vm._l((_vm.items),function(item,index){return _c(_vm.item_tag,{key:'item-'+index,tag:"component",style:({'margin':0,padding:'5px',borderStyle:'solid','border-color':_vm.border_color,'borderTopWidth':'1px','borderBottomWidth':'1px',borderLeftWidth:'1px','borderRightWidth':index==_vm.items.length-1?'1px':'0px','cursor':'pointer',
+// CONCATENATED MODULE: /Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"941e22d0-vue-loader-template"}!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib??vue-loader-options!./vue-item-group.vue?vue&type=template&id=f1819bd8&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c(_vm.tag,{tag:"component",style:({'display':_vm.direction=='horizontal'?'flex':'auto','list-style':'none','margin':0,padding:0})},_vm._l((_vm.items),function(item,index){return _c(_vm.item_tag,{key:'item-'+index,tag:"component",style:({'margin':0,padding:'5px',borderStyle:'solid','border-color':_vm.border_color,
+                fontSize: _vm.item_text_size,
+                'borderTopWidth':'1px','borderBottomWidth':'1px',borderLeftWidth:'1px','borderRightWidth':index==_vm.items.length-1?'1px':'0px','cursor':'pointer',
                 'backgroundColor':index==_vm.selectedIndex?_vm.item_selected_bg_color:_vm.item_bg_color,
                 'color':index==_vm.selectedIndex?_vm.item_selected_color:_vm.item_color,
                 'borderTopLeftRadius':index==0?_vm.border_radius:'0px',
@@ -351,13 +353,15 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./vue-item-group.vue?vue&type=template&id=d09984b2&
+// CONCATENATED MODULE: ./vue-item-group.vue?vue&type=template&id=f1819bd8&
 
 // EXTERNAL MODULE: /Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("3685");
 
 // CONCATENATED MODULE: /Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/thread-loader/dist/cjs.js!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/babel-loader/lib??ref--12-1!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js??ref--0-0!/Users/fisigma/.nvm/versions/node/v12.16.1/lib/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib??vue-loader-options!./vue-item-group.vue?vue&type=script&lang=js&
 
+//
+//
 //
 //
 //
@@ -425,6 +429,10 @@ var es_number_constructor = __webpack_require__("3685");
     item_color: {
       type: String,
       "default": '#333'
+    },
+    item_text_size: {
+      type: String,
+      "default": '14px'
     },
     item_selected_bg_color: {
       type: String,

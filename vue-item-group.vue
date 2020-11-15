@@ -6,7 +6,9 @@
                     :is="item_tag" 
                     v-for="(item,index) in items" 
                     v-html="item.text" 
-                    :style="{'margin':0,padding:'5px',borderStyle:'solid','border-color':border_color,'borderTopWidth':'1px','borderBottomWidth':'1px',borderLeftWidth:'1px','borderRightWidth':index==items.length-1?'1px':'0px','cursor':'pointer',
+                    :style="{'margin':0,padding:'5px',borderStyle:'solid','border-color':border_color,
+                    fontSize: item_text_size,
+                    'borderTopWidth':'1px','borderBottomWidth':'1px',borderLeftWidth:'1px','borderRightWidth':index==items.length-1?'1px':'0px','cursor':'pointer',
                     'backgroundColor':index==selectedIndex?item_selected_bg_color:item_bg_color,
                     'color':index==selectedIndex?item_selected_color:item_color,
                     'borderTopLeftRadius':index==0?border_radius:'0px',
@@ -66,6 +68,10 @@ export default{
         item_color:{
             type:String,
             default:'#333'
+        },
+        item_text_size:{
+            type:String,
+            default:'14px'
         },
         item_selected_bg_color:{
             type:String,
