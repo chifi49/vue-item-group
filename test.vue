@@ -23,7 +23,7 @@ export default{
                     text:'Button 2'
                 },
                 {
-                    text:'Button 3'
+                    text:'<strong>Button 3</strong>'
                 }
             ]
         }

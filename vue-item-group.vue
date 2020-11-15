@@ -1,6 +1,6 @@
 <template>
     <component :is="tag" 
-                :style="{'display':direction=='horizontal'?'flex':'auto','list-style':'none'}"
+                :style="{'display':direction=='horizontal'?'flex':'auto','list-style':'none','margin':0,padding:0}"
                 >
         <component  :key="'item-'+index"
                     :is="item_tag" 
