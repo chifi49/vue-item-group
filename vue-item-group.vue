@@ -104,7 +104,6 @@ export default{
             if(previous_index==index && this.toggle_selected){
                 this.clearSelection();
             }else if(  previous_index!=index  ){
-                
                 this.selectedIndex = index;
                 this.$emit('selected_item',{oldIndex:previous_index,newIndex:index,previousItem: this.items[previous_index], newItem: this.items[index]});
             }
