@@ -42,7 +42,7 @@ export default{
 
 # Props
 #### items
-an array of object that will show the items
+an array of objects that will show the items
 
 each object need to have a text property with the content that will appear. text property can be html
 
